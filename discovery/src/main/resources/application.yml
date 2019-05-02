@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: discovery
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  jmx:
+    enable: false
+  datasource:
+    url: jdbc:mysql://localhost:3360/devdojo?allowPublicKeyRetrieval=true&sslMode=DISABLED
+    username: root
+    password: example
+
+server:
+  port: 8081
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      default-zone: http://localhost:${server.port}/eureka/
