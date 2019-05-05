@@ -6,18 +6,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="auth" />
         <module name="core" />
         <module name="course" />
         <module name="discovery" />
         <module name="gateway" />
+        <module name="token" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="auth" target="1.8" />
       <module name="core" target="1.8" />
       <module name="course" target="1.8" />
       <module name="discovery" target="1.8" />
       <module name="docker-projects" target="1.8" />
       <module name="gateway" target="1.8" />
+      <module name="token" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
